@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishShield</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+   </style>
+
+
+</head>
+<body class = "font-[Rubik]">
+
+
+<header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      
+      <span class="ml-3 text-xl">Welcome!</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <button class="bg-orange-400 text-white font-semibold rounded-full px-3 py-2 mr-5 hover:bg-orange-500">
+        <a href="./index.html" class="p-4">Home</a>
+      </button>
+      <button class=" bg-orange-400 text-white font-semibold rounded-full px-3 py-2 mr-5 hover:bg-orange-500">
+        <a href="./about.html" class="p-4">About</a>
+      </button>
+
+
+
+    </nav>
+  </div>
+</header>
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-1 md:flex-row flex-col items-center">
+    <form form action="{% url 'result' %}" class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">PHISH-SHIELD!</h1>
+      <h2 class="mb-8 leading-relaxed">Verify URLs for secure browsing. <br>Maintain a secure browsing experience:Guarding against malicious websites</h2>
+      <div class="flex w-full md:justify-start justify-center items-end">
+        <div class="relative mr-4 md:w-full lg:w-full xl:w-1/2 w-2/4">
+          <input placeholder="Enter URL" type="text" id="search" name="search" class="w-full bg-gray-100 rounded border bg-opacity-50 border-gray-300 focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <a href="report.html" class="inline-flex text-white bg-orange-400 border-0 py-2 px-6 focus:outline-none hover:bg-orange-500 rounded text-lg" >Search</a>
+      </div>
+    </form>
+    <div class="lg:max-w-md md:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" src="/vector.png">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+</body>
+</html>
+
+
